@@ -1,0 +1,29 @@
+body{
+   
+    min-height: 100vh;
+    display:grid;
+    place-content: center;
+    --btn-background:#006CC1;
+    --btn-text-clr:white;
+}
+
+button{
+    border:none;
+    padding:10px 24px;
+    margin:0 16px;
+    cursor: pointer;
+    background:var(--btn-background);
+    color:var(--btn-text-clr);
+}
+
+.btn_clear{
+  --btn-background:#E6E6E6;
+  --btn-text-clr: black;
+}
+
+.alert_box{
+    width:400px;
+    height:50px;
+    padding:10px;
+   
+}
