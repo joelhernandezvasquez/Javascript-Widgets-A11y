@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <title>Button Widget</title>
+
+</head>
+<body>
+    
+
+    <header class="container">
+        <nav class='mobile_nav' role="navigation">
+            <img src="logo-bookmark.svg" alt="bookmark logo"/>  
+
+             <!-- will make the img acts like button  -->
+             <button id="btn_open_menu" style="border:none; background:none;" aria-label="open menu">  <img  src="icon-hamburger.svg" alt="" /></button>
+          
+
+        </nav>
+    </header>
+
+    <main>
+        <h1> Testing button Widgets</h1>
+    </main>
+
+    <script>
+        const btnMenu = document.querySelector("#btn_open_menu");
+         btnMenu.addEventListener("click",(e)=>{
+            alert("img was clicked and it has the role of button.")
+         })
+    </script>
+</body>
+</html>

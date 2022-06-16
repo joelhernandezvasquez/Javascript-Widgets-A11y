@@ -1,0 +1,39 @@
+
+:root{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+  }
+
+ 
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+  
+   }
+img{
+    display:block;
+    max-width: 100%;
+}
+
+.container{
+    width: min(100vw - 3.9rem, 1200px);
+    margin-inline: auto;
+   
+  }
+  .mobile_nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+.flex-space-between{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn_open_menu{
+    cursor: pointer;
+}
