@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <title>CheckBox Tristate</title>
+
+    <style>
+
+        body{
+            min-height: 100vh;
+            display:grid;
+            place-content: center;
+        }
+        .container{
+            width:500px;
+        }
+        .form_field{
+            margin:16px 0;
+            display:flex;
+            align-items: center;
+            gap:8px;
+            
+        }
+        input{
+            margin-top:5px;
+            width:15px;
+            height: 15px;
+        }
+         .form_field:not(.parent){
+          margin-left:24px;
+         }
+           
+        
+    </style>
+</head>
+<body>
+     <fieldset class="container">
+        <legend>Choose the ingredients for your pizza.</legend>
+         
+         <div class="form_field parent">
+            <input type="checkbox" id='parent' aria-checked="false"/>
+          <label for = "parent">Select All ingredients</label>
+         </div>
+
+         <div class="form_field">
+            <input class="child" type="checkbox" id='cheese' aria-checked="false"/>
+            <label for = "cheese">Cheese</label>
+           </div>
+
+           <div class="form_field">
+            <input class="child" type="checkbox" id='mushrooms' aria-checked="false"/>
+            <label for = "mushrooms">Mushrooms</label>
+           </div>
+
+           <div class="form_field">
+            <input class="child" type="checkbox" id='olives' aria-checked="false"/>
+            <label for = "olives">Olives</label>
+           </div>
+       
+     </fieldset>
+</body>
+</html>
