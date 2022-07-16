@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <script src="./main.js" defer></script>
+    <title>Accordion</title>
+
+    <style>
+        body{
+            min-height: 100vh;
+            display: grid;
+            place-content: center;
+        }
+
+        .panel_header{
+            background:#F0F0F0;
+            display:flex;
+            align-items: center;
+            padding: 20px 0;
+            cursor: pointer;
+        }
+        .panel_header > *{
+            margin:0 10px;
+        }
+        .panel_body{
+            padding:0 20px;
+            height:0;
+            overflow: hidden;
+            transition: height 300ms ease-in-out;
+           
+        }
+        .panel_body.open{
+          height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="panel">
+          
+            <div class="panel_header" role="button" aria-controls="panel1" aria-expanded="false">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <p>The Gettysburg Address, by Abraham Lincoln</p>
+            </div>
+
+            <div class="panel_body" id="panel1" aria-hidden="true">
+                <p>Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.</p>
+                <p>Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -10,6 +10,7 @@ const setAriaChecked = (node,state) =>{
 const toogleCheckboxes = (state) =>{
    if(state){
     setAriaChecked(parentCheckbox,true);
+   
     childCheckboxes.forEach((child)=>{
         child.checked = true;
         setAriaChecked(child,true);
@@ -38,7 +39,6 @@ const getCheckedCheckboxes = () =>{
 const setIndeterminate = (state)=>{
     parentCheckbox.indeterminate = state;
 }
-
 
 const setParentCheckboxState = (amountToChecked) =>{
   

@@ -1,0 +1,70 @@
+
+:root{
+    --backgroundBtn:black;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display:grid;
+    place-items: center;
+    min-height: 100vh;
+    position:relative;
+   
+}
+
+button{
+    border:none;
+    padding:10px 28px;
+    background-color: var(--backgroundBtn);
+    color:white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+.btn_open_dialog{
+    border:none;
+    padding:10px 28px;
+    --backgroundBtn:blue;
+    color:white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.modal{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  display:none;
+  place-content: center;
+ 
+}
+.open.modal{
+    display: grid;
+}
+
+.simple_dialog{
+ background:white;
+ padding:20px;
+ width:500px;
+ height: 200px;
+ border-radius: 20px;
+ 
+ 
+}
+.btn_close{
+ --backgroundBtn:red;
+ color:white;
+ margin-top:20px;
+ 
+}
+
